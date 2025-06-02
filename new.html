@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 26 may</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    /* Section 1: Vertical Colored Courses */
+    .courses-container {
+      width: 150px;
+      margin: 0 auto;
+      border-radius: 80px 80px 0 0;
+      overflow: hidden;
+      border: 3px solid orange;
+    }
+
+    .course {
+      padding: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .yellow {
+      background-color: yellow;
+      color: green;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    /* Section 2: Checkerboard */
+    .checkerboard {
+      display: grid;
+      grid-template-columns: repeat(8, 40px);
+      grid-template-rows: repeat(8, 40px);
+      width: fit-content;
+      margin: 0 auto;
+      border: 2px solid black;
+    }
+
+    .checkerboard div {
+      width: 40px;
+      height: 40px;
+    }
+
+    .checkerboard div:nth-child(odd) {
+      background-color: pink;
+    }
+
+    .checkerboard div:nth-child(even) {
+      background-color: black;
+    }
+
+    /* Adjust alternating rows manually */
+    .checkerboard div:nth-child(1),
+    .checkerboard div:nth-child(3),
+    .checkerboard div:nth-child(5),
+    .checkerboard div:nth-child(7),
+    .checkerboard div:nth-child(10),
+    .checkerboard div:nth-child(12),
+    .checkerboard div:nth-child(14),
+    .checkerboard div:nth-child(16),
+    .checkerboard div:nth-child(17),
+    .checkerboard div:nth-child(19),
+    .checkerboard div:nth-child(21),
+    .checkerboard div:nth-child(23),
+    .checkerboard div:nth-child(26),
+    .checkerboard div:nth-child(28),
+    .checkerboard div:nth-child(30),
+    .checkerboard div:nth-child(32),
+    .checkerboard div:nth-child(33),
+    .checkerboard div:nth-child(35),
+    .checkerboard div:nth-child(37),
+    .checkerboard div:nth-child(39),
+    .checkerboard div:nth-child(42),
+    .checkerboard div:nth-child(44),
+    .checkerboard div:nth-child(46),
+    .checkerboard div:nth-child(48),
+    .checkerboard div:nth-child(49),
+    .checkerboard div:nth-child(51),
+    .checkerboard div:nth-child(53),
+    .checkerboard div:nth-child(55),
+    .checkerboard div:nth-child(58),
+    .checkerboard div:nth-child(60),
+    .checkerboard div:nth-child(62),
+    .checkerboard div:nth-child(64)
+    {
+      background-color: pink;
+    }
+
+    .checkerboard div:nth-child(2),
+    .checkerboard div:nth-child(4),
+    .checkerboard div:nth-child(6),
+    .checkerboard div:nth-child(8),
+    .checkerboard div:nth-child(9),
+    .checkerboard div:nth-child(11),
+    .checkerboard div:nth-child(13),
+    .checkerboard div:nth-child(15),
+    .checkerboard div:nth-child(18),
+    .checkerboard div:nth-child(20),
+    .checkerboard div:nth-child(22),
+    .checkerboard div:nth-child(24),
+    .checkerboard div:nth-child(25),
+    .checkerboard div:nth-child(27),
+    .checkerboard div:nth-child(29),
+    .checkerboard div:nth-child(31),
+    .checkerboard div:nth-child(34),
+    .checkerboard div:nth-child(36),
+    .checkerboard div:nth-child(38),
+    .checkerboard div:nth-child(40),
+    .checkerboard div:nth-child(41),
+    .checkerboard div:nth-child(43),
+    .checkerboard div:nth-child(45),
+    .checkerboard div:nth-child(47),
+    .checkerboard div:nth-child(50),
+    .checkerboard div:nth-child(52),
+    .checkerboard div:nth-child(54),
+    .checkerboard div:nth-child(56),
+    .checkerboard div:nth-child(57),
+    .checkerboard div:nth-child(59),
+    .checkerboard div:nth-child(61),
+    .checkerboard div:nth-child(63)
+    {
+      background-color: black;
+    }
+
+    /* Section 3: Background Image */
+    .background {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Section 1: Vertical Color Blocks -->
+  <div class="section">
+    <h2>Course Blocks</h2>
+    <div class="courses-container">
+      <div class="course red">MCA</div>
+      <div class="course yellow">BCA</div>
+      <div class="course green">BBA</div>
+    </div>
+  </div>
+
+  <!-- Section 2: Checkerboard Pattern -->
+  <div class="section">
+    <h2>Checkerboard</h2>
+    <div class="checkerboard">
+      <!-- 64 squares -->
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <!-- Section 3: Inline CSS Formatting -->
+  <div class="section background">
+    <h2 style="color: white; background: maroon; padding: 10px;">Basic Formatting using Inline CSS</h2>
+    
+    <div style="background: orange; padding: 10px; color: white; margin: 10px; border-radius: 10px;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lacus nec lorem...</p>
+    </div>
+
+    <div style="background: yellow; padding: 10px; color: black; margin: 10px; border-radius: 10px;">
+      <p>Fusce id risus vel sem gravida tincidunt eget sit amet velit. Sed ac ligula at ligula placerat...</p>
+    </div>
+
+    <div style="background: rgba(255,255,255,0.8); padding: 10px; color: black; margin: 10px; border-radius: 10px;">
+      <p>Curabitur ac felis eget felis placerat ullamcorper a nec arcu. Etiam facilisis purus vel...</p>
+    </div>
+  </div>
+
+</body>
+</html>
